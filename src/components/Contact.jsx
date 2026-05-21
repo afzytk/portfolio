@@ -14,14 +14,10 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Submitted Safely:", formData);
-    // Integrate email services like Formspree, Web3Forms, or EmailJS here
   };
 
   return (
-    <section
-      id="contact"
-      className="py-24 bg-background text-foreground border-t border-border"
-    >
+    <section id="contact" className="py-24 bg-background text-foreground">
       <div className="max-w-xl mx-auto px-4">
         <div className="flex flex-col items-center text-center mb-12 gap-3">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">

@@ -2,10 +2,7 @@ import { projects } from "../data/portfolio";
 
 export default function Projects() {
   return (
-    <section
-      id="projects"
-      className="py-24 bg-background text-foreground border-t border-border"
-    >
+    <section id="projects" className="py-24 bg-background text-foreground">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col items-center text-center mb-16 gap-3">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
