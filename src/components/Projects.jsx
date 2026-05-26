@@ -14,46 +14,56 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group flex flex-col justify-between rounded-lg border border-border bg-card p-6 shadow-sm transition-all hover:shadow-md hover:border-primary/20"
+              className="group flex flex-col justify-between overflow-hidden rounded-lg border border-border bg-card shadow-sm transition-all hover:shadow-md hover:border-primary/20"
             >
-              <div className="flex flex-col gap-4">
-                <h3 className="text-xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {project.description}
-                </p>
-
-                <div className="flex flex-wrap gap-2 mt-2">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="px-2.5 py-0.5 text-xs font-medium rounded bg-muted text-muted-foreground border border-border/40"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+              <div className="overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
 
-              <div className="flex items-center gap-4 mt-6 pt-4 border-t border-border/50">
-                <a
-                  href={project.livelink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium text-primary hover:underline"
-                >
-                  Live Demo
-                </a>
+              <div className="flex flex-col justify-between flex-grow p-6">
+                <div className="flex flex-col gap-4">
+                  <h3 className="text-xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {project.description}
+                  </p>
 
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Source Code
-                </a>
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {project.tags.map((tag, tagIndex) => (
+                      <span
+                        key={tagIndex}
+                        className="px-2.5 py-0.5 text-xs font-medium rounded bg-muted text-muted-foreground border border-border/40"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4 mt-6 pt-4 border-t border-border/50">
+                  <a
+                    href={project.livelink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium text-primary hover:underline"
+                  >
+                    Live Demo
+                  </a>
+
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Source Code
+                  </a>
+                </div>
               </div>
             </div>
           ))}
