@@ -7,6 +7,12 @@ export default function Hero() {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-3xl flex flex-col items-center gap-6 z-10">
+        <img
+          src="https://github.com/afzytk.png"
+          alt="Afsal"
+          className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-background shadow-xl ring-2 ring-primary/20"
+        />
+
         <span className="px-3 py-1 text-xs font-medium tracking-wider text-primary bg-primary/10 border border-primary/20 rounded-full uppercase">
           Hi there, I'm
         </span>
