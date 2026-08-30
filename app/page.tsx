@@ -1,10 +1,10 @@
-import { ProjectCard } from "@/components/ProjectCard";
+import { ProjectGrid } from "@/components/ProjectGrid";
 
 const page = () => {
   return (
     <div>
       <h1>Portfolio</h1>
-      <ProjectCard />
+      <ProjectGrid />
     </div>
   );
 };

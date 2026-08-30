@@ -9,7 +9,13 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div className="rounded-2xl border overflow-hidden">
       <h1>{project.title}</h1>
-      <Image src={project.cover} alt="project-cover" width={600} height={400} />
+      <Image
+        src={project.cover}
+        alt="project-cover"
+        width={600}
+        height={400}
+        unoptimized
+      />
 
       <p>{project.summary}</p>
       {project.stack.map((skill) => (
