@@ -1,9 +1,12 @@
+import { Hero } from "@/components/Hero";
 import { ProjectGrid } from "@/components/ProjectGrid";
+import { SkillsSection } from "@/components/SkillsSection";
 
 const page = () => {
   return (
     <div>
-      <h1>Portfolio</h1>
+      <Hero />
+      <SkillsSection />
       <ProjectGrid />
     </div>
   );
