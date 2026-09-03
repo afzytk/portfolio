@@ -4,7 +4,7 @@ import { SkillsSection } from "@/components/SkillsSection";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
-const page = () => {
+const Page = () => {
   return (
     <div className="flex flex-col gap-8">
       <Hero />
@@ -16,4 +16,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
