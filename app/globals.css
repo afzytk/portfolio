@@ -3,3 +3,7 @@
 @theme {
   --font-inter: var(--font-inter);
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -35,6 +35,7 @@ export const Contact = () => {
     <form
       onSubmit={handleSubmit}
       className="max-w-md p-6 shadow-md rounded-lg "
+      id="contact"
     >
       <h3 className="text-3xl mb-6">Contact</h3>
       <div className="mb-8">

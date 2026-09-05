@@ -2,7 +2,7 @@ import { skillCategories } from "@/lib/skills";
 
 export const SkillsSection = () => {
   return (
-    <div>
+    <div id="skills">
       <p className="text-4xl m-4">Skills</p>
       {skillCategories.map((category) => (
         <div key={category.name}>

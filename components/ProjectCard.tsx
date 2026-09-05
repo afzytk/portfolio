@@ -39,6 +39,8 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                                    py-2 px-4 rounded-3xl 
                                    focus:outline-none 
                                    focus:shadow-outline m-4 text-center"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Live
           </a>
@@ -53,6 +55,8 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                                    py-2 px-4 rounded-3xl 
                                    focus:outline-none 
                                    focus:shadow-outline m-4 text-center"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Code
           </a>
