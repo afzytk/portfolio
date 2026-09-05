@@ -82,11 +82,11 @@ export const Contact = () => {
         type="submit"
         disabled={status === "sending"}
         className="bg-green-500 
-                                   hover:bg-blue-700 
+                                   hover:bg-green-700 
                                    text-white font-bold
                                    py-2 px-4 rounded-3xl 
                                    focus:outline-none 
-                                   focus:shadow-outline"
+                                   focus:shadow-outline cursor-pointer"
       >
         {status === "sending" ? "Sending..." : "Send Message"}
       </button>
