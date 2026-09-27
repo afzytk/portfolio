@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 
 const Page = () => {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-20">
       <Hero />
       <SkillsSection />
       <ProjectGrid />
